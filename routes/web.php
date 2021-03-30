@@ -16,3 +16,4 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/barang', [App\Http\Controllers\BarangController::class, 'index']);

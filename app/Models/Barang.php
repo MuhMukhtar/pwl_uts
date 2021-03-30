@@ -12,7 +12,7 @@ class Barang extends Model
 {
     // use HasFactory;
 
-    protected $table='barang'; //Eloquent akan membuat model mahasiswa menyimpan record di table mahasiswas
+    protected $table='barangs'; //Eloquent akan membuat model mahasiswa menyimpan record di table mahasiswas
     public $timestamps=false;
     protected $primaryKey='id_barang'; //Mengambil isi DB dengan primaryKey
 
@@ -24,4 +24,9 @@ class Barang extends Model
         'harga_barang',
         'qty_barang'
     ];
+
+    public static function barang()
+    {
+        return Barang::all();
+    }
 }

@@ -9,6 +9,6 @@ class BarangController extends Controller
 {
     public function index()
     {
-        return view('data.barang', ['barangs' => Barang::barang()]);
+        return view('barang', ['barangs' => Barang::barang()]);
     }
 }

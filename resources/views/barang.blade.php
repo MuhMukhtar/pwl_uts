@@ -13,7 +13,7 @@
           </tr>
         </thead>
         <tbody>
-          {{-- @foreach ($barangs as $item)
+          @foreach ($barangs as $item)
           <tr class="bg-secondary text-white">
             <th scope="row">{{$item->id_barang}}</th>
             <td>{{$item->kode_barang}}</td>
@@ -26,7 +26,7 @@
               <button type="button" class="btn btn-danger">Delete</button>
             </td>
           </tr>
-          @endforeach --}}
+          @endforeach
         </tbody>
       </table>
     @endsection
