@@ -9,4 +9,8 @@
         {{-- NAVBAR --}}
         @include('layouts.navbar')
     </div>  
+    <br><br>
+    <div class="container-fluid">
+        @yield('table')
+    </div>
 </body>
