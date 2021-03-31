@@ -25,10 +25,10 @@
                     <td>{{ $item->harga_barang }}</td>
                     <td>{{ $item->qty_barang }}</td>
                     <td>
-                        <form action="{{ route('barang.destroy', $item->id_barang) }}" method="POST">
-                            <button type="button" class="btn btn-warning">Edit</button>
-                            <button type="submit" class="btn btn-danger">Delete</button>
-                        </form>
+                        {{-- <form action="{{ route('barang.destroy', $item->id_barang) }}" method="POST"> --}}
+                        <a class="btn btn-warning" href="{{ route('barang.edit', $item->id_barang) }}">Edit</a>
+                        {{-- <button type="submit" class="btn btn-danger">Delete</button> --}}
+                        {{-- </form> --}}
                     </td>
                 </tr>
             @endforeach
