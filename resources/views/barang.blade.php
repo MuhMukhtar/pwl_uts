@@ -1,5 +1,11 @@
 @extends('layouts.app')
-    @section('table')
+
+    {{-- @section('addbutton')
+    <a class="btn btn-outline-success" href="{{ route('barangs.create') }}"> Input Barang</a>
+    @endsection --}}
+
+    @section('content')
+    <a class="btn btn-outline-success" href="{{ route('barangs.create') }}"> Input Barang</a>
     <table class="table">
         <thead>
           <tr class="bg-primary text-white">

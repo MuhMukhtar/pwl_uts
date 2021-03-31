@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BarangController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
@@ -15,5 +16,6 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
-Route::get('/barang', [App\Http\Controllers\BarangController::class, 'index']);
+// Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/', [App\Http\Controllers\BarangController::class, 'index']);
+Route::resource('barang', BarangController::class);

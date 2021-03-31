@@ -25,8 +25,8 @@ class Barang extends Model
         'qty_barang'
     ];
 
-    public static function barang()
-    {
-        return Barang::all();
-    }
+    // public static function barang()
+    // {
+    //     return Barang::all();
+    // }
 }
