@@ -20,33 +20,38 @@
                             </ul>
                         </div>
                     @endif
-                    <form method="post" action="{{ route('barang.update', $item->id_barang) }}" id="myForm">
+                    <form method="post" action="{{ route('barang.update', $Barang->id_barang) }}" id="myForm">
                         @csrf
                         @method('PUT')
                         <div class="form-group">
                             <label for="id_barang">Id Barang</label>
                             <input type="text" name="id_barang" class="form-control" id="id_barang"
-                                value="{{ $item->id_barang }}" aria-describedby="id_barang" disabled>
+                                value="{{ $Barang->id_barang }}" aria-describedby="id_barang" disabled>
                         </div>
                         <div class="form-group">
                             <label for="kode_barang">Kode Barang</label>
                             <input type="kode_barang" name="kode_barang" class="form-control" id="kode_barang"
-                                value="{{ $item->kode_barang }}" aria-describedby="kode_barang">
+                                value="{{ $Barang->kode_barang }}" aria-describedby="kode_barang">
                         </div>
                         <div class="form-group">
                             <label for="nama_barang">Nama</label>
                             <input type="text" name="nama_barang" class="form-control" id="nama_barang"
-                                value="{{ $item->nama_barang }}" aria-describedby="nama_barang">
+                                value="{{ $Barang->nama_barang }}" aria-describedby="nama_barang">
+                        </div>
+                        <div class="form-group">
+                            <label for="kategori_barang">Kategori Barang</label>
+                            <input type="text" name="kategori_barang" class="form-control" id="kategori_barang"
+                                value="{{ $Barang->kategori_barang }}" aria-describedby="kategori_barang">
                         </div>
                         <div class="form-group">
                             <label for="harga_barang">Harga</label>
                             <input type="harga_barang" name="harga_barang" class="form-control" id="harga_barang"
-                                value="{{ $item->harga_barang }}" aria-describedby="harga_barang">
+                                value="{{ $Barang->harga_barang }}" aria-describedby="harga_barang">
                         </div>
                         <div class="form-group">
                             <label for="qty_barang">QTY</label>
                             <input type="qty_barang" name="qty_barang" class="form-control" id="qty_barang"
-                                value="{{ $item->qty_barang }}" aria-describedby="qty_barang">
+                                value="{{ $Barang->qty_barang }}" aria-describedby="qty_barang">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>

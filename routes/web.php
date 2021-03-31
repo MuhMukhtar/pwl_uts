@@ -18,4 +18,5 @@ use App\Http\Controllers\HomeController;
 
 // Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 Route::get('/', [App\Http\Controllers\BarangController::class, 'index']);
+// Route::get('hapus/{id}', [App\Http\Controllers\BarangController::class, 'delete']);
 Route::resource('barang', BarangController::class);

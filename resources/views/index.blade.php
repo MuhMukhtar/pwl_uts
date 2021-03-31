@@ -25,10 +25,9 @@
                     <td>{{ $item->harga_barang }}</td>
                     <td>{{ $item->qty_barang }}</td>
                     <td>
-                        {{-- <form action="{{ route('barang.destroy', $item->id_barang) }}" method="POST"> --}}
                         <a class="btn btn-warning" href="{{ route('barang.edit', $item->id_barang) }}">Edit</a>
-                        {{-- <button type="submit" class="btn btn-danger">Delete</button> --}}
-                        {{-- </form> --}}
+                        <a class="btn btn-danger" onclick="return confirm('Are you sure want to delete ?')"
+                            href="{{ route('barang.destroy', $item->id_barang) }}"><i class="fa fa-trash">Delete</i></a>
                     </td>
                 </tr>
             @endforeach

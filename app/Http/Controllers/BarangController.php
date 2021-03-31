@@ -78,4 +78,11 @@ class BarangController extends Controller
         return redirect()->route('barang.index')
             ->with('success', 'Barang Berhasil Dihapus');
     }
+
+    // public function hapus($id_barang)
+    // {
+    //     $Barang = Barang::find($id_barang);
+
+    //     return view('barangs.delete', compact('Barang'));
+    // }
 }

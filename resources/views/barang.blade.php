@@ -1,10 +1,10 @@
-@extends('layouts.app')
+{{-- @extends('layouts.app') --}}
 
     {{-- @section('addbutton')
     <a class="btn btn-outline-success" href="{{ route('barangs.create') }}"> Input Barang</a>
     @endsection --}}
 
-    @section('content')
+    {{-- @section('content')
     <a class="btn btn-outline-success" href="{{ route('barangs.create') }}"> Input Barang</a>
     <table class="table">
         <thead>
@@ -35,4 +35,4 @@
           @endforeach
         </tbody>
       </table>
-    @endsection
+    @endsection --}}
