@@ -25,9 +25,16 @@
                     <td>{{ $item->harga_barang }}</td>
                     <td>{{ $item->qty_barang }}</td>
                     <td>
-                        <a class="btn btn-warning" href="{{ route('barang.edit', $item->id_barang) }}">Edit</a>
-                        <a class="btn btn-danger" onclick="return confirm('Are you sure want to delete ?')"
-                            href="{{ route('barang.destroy', $item->id_barang) }}"><i class="fa fa-trash">Delete</i></a>
+                        <form action="{{ route('barang.destroy', $item->id_barang) }}" method="POST">
+                            <a class="btn btn-warning" href="{{ route('barang.edit', $item->id_barang) }}">Edit</a>
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" onclick="return confirm('Are you sure want to delete ?')"
+                                class="btn btn-danger">Delete</button>
+                            {{-- <a type="submit" class="btn btn-danger"
+                                onclick="return confirm('Are you sure want to delete ?')"><i
+                                    class="fa fa-trash">Delete</i></a> --}}
+                        </form>
                     </td>
                 </tr>
             @endforeach
